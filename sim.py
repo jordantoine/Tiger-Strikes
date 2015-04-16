@@ -30,7 +30,7 @@ while t < 999999999: #27.77 hours
                 tsOff = t+8000
                 if prevProc == 0 and t != 0:
                     prevProc = t #the first proc is annoying
-				tsUt = tsUt+min((t-prevProc), 8000)
+                tsUt = tsUt+min((t-prevProc), 8000)
                 prevProc = t
         if random.random() < (msPct_cur/100):    #check 2nd multistrike
             if random.random() <= tsChance:
